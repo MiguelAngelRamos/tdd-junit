@@ -1,9 +1,9 @@
 package cl.kibernumacademy.service;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
+import cl.kibernumacademy.model.Invoice;
 
 public class InvoiceManagerTest {
   private InvoiceManager manager;
@@ -35,8 +35,5 @@ public class InvoiceManagerTest {
     assertThat(removed).isTrue();
     assertThat(manager.getAll()).isEmpty();
   }
-
-  
-
 
 }
